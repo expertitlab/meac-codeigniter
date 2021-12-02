@@ -1,0 +1,11 @@
+CREATE TABLE `products` (
+    `id` BIGINT NOT NULL AUTO_INCREMENT,
+    `libelle` VARCHAR(200) NOT NULL,
+    `price` DOUBLE NOT NULL DEFAULT 0,
+    `description` LONGTEXT NOT NULL,
+    `image` TEXT NOT NULL,
+    `created_at` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,
+    `updated_at` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,
+    `deleted_at` DATETIME  DEFAULT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE = MyISAM;
